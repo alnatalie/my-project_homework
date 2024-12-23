@@ -1,0 +1,22 @@
+li {
+    text-align: start;
+ }
+
+*{
+    text-align: center;
+    font-size: 25px;
+}
+ .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .attention{
+    color: red;
+ }
+
+ 
+
+ 
+

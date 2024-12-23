@@ -1,0 +1,26 @@
+<h2>Мой любимый питомец</h2>
+<div class="flex">
+    <p>Моего любимого питомца зовут {{catName}}, он кот.</p>
+    <button (click)="toggleCondition()">Показать/Скрыть</button> <ng-template [ngIf]="condition">
+        <span [class]="{attention: true}"> Острожно, есть риск захотеть такого же кота!!</span>
+    </ng-template><br>
+    <img [hidden]="condition" width="400px" src="https://koshka.top/uploads/posts/2021-12/1639514020_1-koshka-top-p-persidskoi-koshki-belogo-tsveta-1.jpg" alt='Кот Степан'>
+    <p>Вот несколько 5 фактов о нем:</p>
+    <ol>
+        <li>Он на <span>{{1/2 | percent}}</span> персидский кот, но это не точно.
+        </li>
+        <li>У него гетерохромия.
+        </li>
+        <li>Он любит громко мяукать вникуда.
+        </li>
+        <li>В этом году исполнился юбилей - {{'10 лет!!!' | uppercase }}.
+        </li> 
+        <li>Содержанец. Не хочет идти работать, оправдываясь тем, что у него лапки.
+        </li> 
+        
+    </ol>
+    
+    
+    <p></p>
+    
+</div>
